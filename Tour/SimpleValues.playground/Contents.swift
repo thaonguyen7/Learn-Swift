@@ -1,5 +1,5 @@
 print("Hello, world!")
-
+//variable & constant
 var myVariable = 42
 myVariable = 50
 let myConstant = 42
@@ -9,10 +9,12 @@ let implicitDouble = 70.0
 let explicitDouble: Double = 70
 let floatConstant: Float = 4
 
+//type cast
 let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)
 
+//string
 let apples = 3
 let oranges = 5
 let appleSummary = "I have \(apples) apples."
@@ -21,7 +23,7 @@ let fruitSummary = "I have \(apples + oranges) pieces of fruit."
 let rectWidth: Float = 5
 let rectHeight: Float = 4
 let rectArea = "Rect area is \(rectWidth * rectHeight)"
-let name = "LK"
+let name = "John Appleseed"
 let greeting = "Hello, \(name)"
 
 let quotation = """
@@ -32,6 +34,7 @@ Double quotes (") can appear without being escaped.
 I still have \(apples + oranges) pieces of fruit.
 """
 
+//array & dictionary
 var shoppingList = ["catfish", "water", "tulips",]
 shoppingList[1] = "bottle of water"
 

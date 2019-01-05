@@ -31,3 +31,27 @@ let customer1 = Customer(id: "8f179198-4cba-4bcc-a689-12ffae322b99", firstName: 
 let address = Customer.ShippingAddress(street: "Hanoi, Vietnam", zipCode: 100000, phone: "0123456789")
 customer1.shippingAddress = address
 customer1.paymentMethod = Customer.PaymentMethod.CashOnDelivery
+
+
+// Optional method in protocol
+protocol OptionalProtocol {
+    func optionalFunc() -> Void
+    func requiredFunc() -> Void
+}
+
+extension OptionalProtocol {
+    func optionalFunc() {
+        // do nothing
+        print("default impl")
+    }
+}
+
+class Test: OptionalProtocol {
+    func requiredFunc() {
+        print("test")
+    }
+}
+
+let a = Test()
+a.optionalFunc()
+a.requiredFunc()
